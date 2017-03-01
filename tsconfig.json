@@ -1,24 +1,22 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "sourceMap": true,
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es2015", "dom"],
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "moduleResolution": "node",
+    "outDir": "build"
   },
-
   "files": [
-    "src/angular2-nvd3/angular2-nvd3.component.ts",
-    "src/angular2-nvd3/angular2-nvd3.directive.ts",
-    "src/angular2-nvd3/angular2-nvd3.module.ts"
+    "src/index.ts"
   ],
-
-  "angularCompilerOptions": {
-   "genDir": "dist",
-   "skipMetadataEmit" : true
- }
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
 }

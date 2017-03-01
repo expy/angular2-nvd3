@@ -8,9 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var angular2_nvd3_core_1 = require("./angular2-nvd3.core");
+var core_1 = require('@angular/core');
+var angular2_nvd3_core_1 = require('./angular2-nvd3.core');
 var NvD3Component = (function () {
     function NvD3Component(el) {
         this.el = el;
@@ -23,18 +22,18 @@ var NvD3Component = (function () {
         this.ngNvD3.isViewInitialize(true);
         this.ngNvD3.updateWithOptions(this.options, this.data);
     };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], NvD3Component.prototype, "options", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], NvD3Component.prototype, "data", void 0);
+    NvD3Component = __decorate([
+        core_1.Component({ selector: 'app-nvd3', template: '' }), 
+        __metadata('design:paramtypes', [core_1.ElementRef])
+    ], NvD3Component);
     return NvD3Component;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Object)
-], NvD3Component.prototype, "options", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Object)
-], NvD3Component.prototype, "data", void 0);
-NvD3Component = __decorate([
-    core_1.Component({ selector: 'app-nvd3', template: '' }),
-    __metadata("design:paramtypes", [core_1.ElementRef])
-], NvD3Component);
 exports.NvD3Component = NvD3Component;
