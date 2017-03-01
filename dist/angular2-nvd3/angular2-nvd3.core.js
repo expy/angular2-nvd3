@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var d3 = require("d3");
 var nv = require("nvd3");
 var Angular2NvD3;
