@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var angular2_nvd3_component_1 = require("./angular2-nvd3.component");
-var angular2_nvd3_directive_1 = require("./angular2-nvd3.directive");
 var NvD3Module = (function () {
     function NvD3Module() {
     }
@@ -17,12 +16,10 @@ var NvD3Module = (function () {
 NvD3Module = __decorate([
     core_1.NgModule({
         declarations: [
-            angular2_nvd3_component_1.NvD3Component,
-            angular2_nvd3_directive_1.NvD3Directive
+            angular2_nvd3_component_1.NvD3Component
         ],
         exports: [
-            angular2_nvd3_component_1.NvD3Component,
-            angular2_nvd3_directive_1.NvD3Directive
+            angular2_nvd3_component_1.NvD3Component
         ]
     })
 ], NvD3Module);
